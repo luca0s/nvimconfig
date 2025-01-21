@@ -27,3 +27,14 @@ vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
+
+-- Set and move to file marks
+vim.keymap.set("n", "<leader>mf", "mF")
+vim.keymap.set("n", "<leader>md", "mD")
+vim.keymap.set("n", "<leader>ms", "mS")
+vim.keymap.set("n", "<leader>ma", "mA")
+
+vim.keymap.set("n", "<leader>jf", "'F")
+vim.keymap.set("n", "<leader>jd", "'D")
+vim.keymap.set("n", "<leader>js", "'S")
+vim.keymap.set("n", "<leader>ja", "'A")
