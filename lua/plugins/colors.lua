@@ -3,16 +3,12 @@ function SetColor(color)
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-	vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+    vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
 end
 
 local themes = {
-    {
-        "ellisonleao/gruvbox.nvim",
-        name = "gruvbox",
-    },
     {
         "rose-pine/neovim",
         name = "rose-pine",
@@ -26,8 +22,12 @@ local themes = {
         end
     },
     {
-        "tiagovla/tokyodark.nvim",
-        name = "tokyodark",
+        "vague2k/vague.nvim",
+        name = "vague",
+        config = function()
+            require("vague").setup({
+            })
+        end
     }
 }
 
